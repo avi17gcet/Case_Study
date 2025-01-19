@@ -6,5 +6,5 @@ CREATE TABLE customer (
   first_name varchar, 
   last_name varchar
 );
-GRANT OWNERSHIP ON TABLE customer TO ROLE {{owner}};
+
 EXECUTE IMMEDIATE FROM 'insert_customers.sql';
